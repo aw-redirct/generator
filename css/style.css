@@ -1,0 +1,115 @@
+body {
+  /* cover  */
+  font-family: 'Open Sans', sans-serif;
+  background: url("https://i.ytimg.com/vi/IzcfEvV4jkU/maxresdefault.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.icon {
+  /* need this so #quotegen doesn't stretch and is centered */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  opacity: 0.6;
+}
+
+#quoteGen {
+  /* poor man link for a new quote */
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.share {
+  /* same as above, div so #twitter_share doesn't stretch */
+  position: fixed;
+  bottom: 350px;
+  left: 0;
+  right: 10%;
+}
+
+#twitter_share {
+  /* poor man link with hover and fit div */
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+#twitter_share:hover {
+  color: #1b95e0;
+}
+
+.quotebox {
+  /* where the magic happens */
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  margin: 0 50px 0 50px;
+  padding: 15px;
+  opacity: 0.8;
+}
+
+#quote {
+  /* magic */
+  padding-top: 50px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container {
+  /* apply an opacity filter on body */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+
+.fixfooter {
+  /* same fix as above */
+  display: inline-block;
+}
+
+footer a:link {
+  color: #fff;
+  font-size: 12px;
+}
+
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .share {
+    /* same as above, div so #twitter_share doesn't stretch */
+    position: fixed;
+    bottom: 150px;
+    left: 0;
+    right: 30%;
+  }
+  .icon {
+    /* need this so #quotegen doesn't stretch and is centered */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    opacity: 0.6;
+  }
+  .fa-twitter {
+    font-size: 2em !important;
+  }
+  .fa-chevron-circle-right {
+    font-size: 4em !important;
+  }
+}
